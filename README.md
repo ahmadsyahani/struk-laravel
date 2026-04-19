@@ -100,19 +100,13 @@ php artisan key:generate
 Edit file `.env`, sesuaikan konfigurasi database:
 
 ```env
-DB_CONNECTION=mysql
+DB_CONNECTION=pgsql
 DB_HOST=127.0.0.1
-DB_PORT=3306
+DB_PORT=5432
 DB_DATABASE=struk_belanja
-DB_USERNAME=root
-DB_PASSWORD=
+DB_USERNAME=postgres 
+DB_PASSWORD= 
 ```
-
-> 💡 Atau gunakan SQLite agar lebih simpel:
-> ```env
-> DB_CONNECTION=sqlite
-> ```
-> Lalu buat file database: `touch database/database.sqlite`
 
 ### 4. Jalankan migrasi
 
